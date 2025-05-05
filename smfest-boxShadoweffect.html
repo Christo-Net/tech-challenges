@@ -1,0 +1,50 @@
+
+
+.element-with-text {
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.5), /* Outer glow */
+      0 0 20px rgba(0, 0, 0, 0.3); /* Inner glow, adjust values as needed */
+  }
+  
+  .element-with-text span {
+      font-size: 0.5em;
+      display: block;
+      letter-spacing: 2px;
+      margin-top: 5px;
+  }
+  
+  .container {
+      background-color: #191970;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  Code
+  
+  <div class="container">
+      <div class="element-with-text">
+          SiliconAfrica
+          <span>TECHNOLOGIES</span>
+      </div>
+  </div>
+  Explanation:
+  text-shadow: This CSS property adds shadows to the text. Multiple shadows are used to create the desired effect.
+  The first shadow 0 0 10px rgba(0, 0, 0, 0.5) creates an outer glow effect. The values represent:
+  0: Horizontal offset (no offset).
+  0: Vertical offset (no offset).
+  10px: Blur radius (adjust for the size of the glow).
+  rgba(0, 0, 0, 0.5): Color of the shadow (black with 50% opacity).
+  The second shadow 0 0 20px rgba(0, 0, 0, 0.3) adds an inner glow effect, with a larger blur radius and lower opacity.
+  background-color: Sets a dark blue background color similar to the image.
+  color: Sets the text color to white.
+  font-family, font-weight, font-size, letter-spacing: Adjusts the text appearance.
+  display: flex, justify-content: center, align-items: center: Centers the text within the container.
+  height: 100vh: Makes the container take up the full height of the viewport.

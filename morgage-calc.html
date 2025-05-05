@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .content {
+        padding: 3%;
+        width: 100%;
+        height: 100%;   
+        /* border: 3px solid black; */
+        display: grid;
+        grid-template-rows: 15% 1fr;
+        grid-template-columns: 0 60% 50%;
+        
+    }
+    .header {
+        /* border: 3px solid; */
+        /* margin: 0 10%; */
+        width: 48vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 35%;
+        transform: translateX(2.5%);
+
+    }
+    .header h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .left {
+        border: 3px solid black;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+        /* overflow-y: scroll; */
+        
+        
+    }
+    
+    .right {
+        transform: translateX(-17%);
+        border-radius: 0 0 0 80px;
+        background-color: rgb(19, 48, 64);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 114vh;
+        
+        
+    }
+    .body {
+        margin-top: 5rem;
+        padding: 5px;
+        /* border: 3px solid black; */
+        width: 43vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        transform: translateX(40px);
+        
+    }
+    .body-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .body-content-2 {
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+    .body-content-2 div {
+        border: 3px solid black;
+        width: 99%;
+        height: 40px;
+        padding-top: 1rem;
+
+    }
+    h4 {
+        width: 100%;
+    }
+    input[type="text"] {
+        height: 45px;
+        width: 99%;
+    }
+    input[type="month"] {
+        height: 45px;
+        width: 95%;
+    }
+     input[type="range"] {
+        height: 45px;
+        width: 98%;
+    }
+   button {
+    border-radius: 30px;
+    width: 70%;
+    height: 3rem;
+    background-color: rgb(217, 219, 48);
+   }
+
+
+    @media screen and (max-width: ) {
+        
+    }
+    
+</style>
+<body>
+    <section class="content">
+        <div class="header">
+            <h1>Mortage Calculator</h1>
+            <a href="light-mode-toggle.html">ClearAll</a>
+        </div>
+
+        <div class="left">
+
+            <div class="body">
+                <h4>Mortage Amount</h1>
+                <input type="text" pattern="0-9">
+
+                <div class="body-content">
+                    <div>
+                        <h4>Mortage Team</h4>
+                        <input type="month">
+                    </div>
+                    <div>
+                        <h4>Interest Rate</h4>
+                        <input type="range">
+                    </div>
+                </div>
+
+                <h4>Mortage Type</h4>
+            
+                <div class="body-content-2">
+                <div>
+                    <input type="radio" id="Repayment" required name="radio">
+                    <label for="Repayment">Repayment</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="InterestOnly" required name="radio">
+                    <label for="InterestOnly">InterestOnly</label>
+                </div>
+                </div>
+
+                <button>Calculate Repayments</button><br>
+            </div>
+           </div>
+
+            <div class="right">
+                <div>
+                    <img src="extensions-img/download.jpg" alt="a simple Mortage calculator">
+                </div>
+            </div>
+    </section>
+</body>
+</html>
